@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <!--File to enable HTTP requests, since it's not enabled by default.
+        Also, it's necessary to update the Manifest file with:
+        android:networkSecurityConfig="@xml/network_security_config"
+    -->
+    <domain-config cleartextTrafficPermitted="true">
+        <domain includeSubdomains="true">api.openweathermap.org</domain>
+    </domain-config>
+</network-security-config>

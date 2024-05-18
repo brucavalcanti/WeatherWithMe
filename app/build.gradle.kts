@@ -41,7 +41,10 @@ android {
 
 dependencies {
 
-    //Dependência do Retrofit e seu conversor
+    //Picasso Dependency
+    implementation ("com.squareup.picasso:picasso:2.8")
+
+    //Dependency from Retrofit e and it's conversor
     implementation ("com.squareup.retrofit2:retrofit:2.9.0")
     implementation ("com.squareup.retrofit2:converter-gson:2.9.0")
 
