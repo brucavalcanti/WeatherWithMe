@@ -31,7 +31,7 @@ class WeatherActivity : AppCompatActivity() {
 
 
     private var cityName:String?=null
-    private var currentDescription:String?=null
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         Picasso.get().setLoggingEnabled(true)
@@ -39,7 +39,7 @@ class WeatherActivity : AppCompatActivity() {
         setContentView(binding.root)
         val city = intent.getStringExtra("city").toString()
         val languageSelected = intent.getStringExtra("language").toString()
-        val apiKey = "edd27f4ccc2564fcda3f82cc3cf8caf7"
+        val apiKey = "{ApiKey}"
 
         Log.i(ProjectConstants.weatherActivity, "onCreate: Starting Coroutine ")
         CoroutineScope(Dispatchers.IO).launch {
