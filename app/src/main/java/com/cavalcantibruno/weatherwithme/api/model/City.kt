@@ -1,9 +1,12 @@
 package com.cavalcantibruno.weatherwithme.api.model
 
-data class Sys(
+data class City(
+    val coord: CoordX,
     val country: String,
     val id: Int,
+    val name: String,
+    val population: Int,
     val sunrise: Int,
     val sunset: Int,
-    val type: Int
+    val timezone: Int
 )

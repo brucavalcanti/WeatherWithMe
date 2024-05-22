@@ -15,5 +15,6 @@ class RetrofitHelper {
             .baseUrl("http://api.openweathermap.org/geo/1.0/")
             .addConverterFactory(GsonConverterFactory.create())
             .build()
+
     }
 }
